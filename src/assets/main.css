@@ -1,0 +1,595 @@
+@import './base.css';
+
+#app {
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+
+}
+
+
+
+
+
+
+
+
+
+
+.signup .font-robo {
+  font-family: roboto,arial,helvetica neue,sans-serif
+}
+
+.signup .font-poppins {
+  font-family: poppins,arial,helvetica neue,sans-serif
+}
+
+.signup .row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap
+}
+
+.signup .row-space {
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -moz-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between
+}
+
+.signup .col-2 {
+  width: -webkit-calc((100% - 30px)/2);
+  width: -moz-calc((100% - 30px)/2);
+  width: calc((100% - 30px)/2)
+}
+
+@media(max-width: 767px) {
+  .signup .col-2 {
+      width:100%
+  }
+}
+
+
+
+* {
+  padding: 0;
+  margin: 0
+}
+
+.signup *,.signup *:before,.signup *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit
+}
+
+
+.signup li>ol,.signup li>ul {
+  margin-bottom: 0
+}
+
+.signup table {
+  border-collapse: collapse;
+  border-spacing: 0
+}
+
+.signup fieldset {
+  min-width: 0;
+  border: 0
+}
+
+.signup button {
+  outline: none;
+  background: 0 0;
+  border: none
+}
+
+.signup .page-wrapper {
+  min-height: 100vh
+}
+
+.signup body {
+  font-family: poppins,arial,helvetica neue,sans-serif;
+  font-weight: 400;
+  font-size: 14px
+}
+
+.signup h1,.signup h2,.signup h3,.signup h4,.signup h5,.signup h6 {
+  font-weight: 400
+}
+
+.signup h1 {
+  font-size: 36px
+}
+
+.signup h2 {
+  font-size: 30px
+}
+
+.signup h3 {
+  font-size: 24px
+}
+
+.signup h4 {
+  font-size: 18px
+}
+
+.signup h5 {
+  font-size: 15px
+}
+
+.signup h6 {
+  font-size: 13px
+}
+
+.signup .bg-blue {
+  background: #2c6ed5
+}
+
+.signup .bg-red {
+  background: #fa4251
+}
+
+.signup .bg-gra-01 {
+  background: -webkit-gradient(linear,left bottom,left top,from(#fbc2eb),to(#a18cd1));
+  background: -webkit-linear-gradient(bottom,#fbc2eb 0%,#a18cd1 100%);
+  background: -moz-linear-gradient(bottom,#fbc2eb 0%,#a18cd1 100%);
+  background: -o-linear-gradient(bottom,#fbc2eb 0%,#a18cd1 100%);
+  background: linear-gradient(to top,#fbc2eb 0%,#a18cd1 100%)
+}
+
+.signup .bg-gra-02 {
+  background: -webkit-gradient(linear,left bottom,right top,from(#fc2c77),to(#6c4079));
+  background: -webkit-linear-gradient(bottom left,#fc2c77 0%,#6c4079 100%);
+  background: -moz-linear-gradient(bottom left,#fc2c77 0%,#6c4079 100%);
+  background: -o-linear-gradient(bottom left,#fc2c77 0%,#6c4079 100%);
+  background: linear-gradient(to top right,#fc2c77 0%,#6c4079 100%)
+}
+
+.signup .p-t-100 {
+  padding-top: 100px
+}
+
+.signup .p-t-130 {
+  padding-top: 130px
+}
+
+.signup .p-t-180 {
+  padding-top: 180px
+}
+
+.signup .p-t-20 {
+  padding-top: 20px
+}
+
+.signup .p-t-15 {
+  padding-top: 15px
+}
+
+.signup .p-t-10 {
+  padding-top: 10px
+}
+
+.signup .p-t-30 {
+  padding-top: 30px
+}
+
+.signup .p-b-100 {
+  padding-bottom: 100px
+}
+
+.signup .m-r-45 {
+  margin-right: 45px
+}
+
+.signup .wrapper {
+  margin: 0 auto
+}
+
+.signup .wrapper--w960 {
+  max-width: 960px
+}
+
+.signup .wrapper--w780 {
+  max-width: 780px
+}
+
+.signup .wrapper--w680 {
+  max-width: 680px
+}
+
+.signup .btn {
+  display: inline-block;
+  line-height: 50px;
+  padding: 0 50px;
+  -webkit-transition: all .4s ease;
+  -o-transition: all .4s ease;
+  -moz-transition: all .4s ease;
+  transition: all .4s ease;
+  cursor: pointer;
+  font-size: 18px;
+  color: #fff;
+  font-family: poppins,arial,helvetica neue,sans-serif
+}
+
+.signup .btn--radius {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px
+}
+
+.signup .btn--radius-2 {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px
+}
+
+.signup .btn--pill {
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px
+}
+
+.btn--green {
+  background: #57b846
+}
+
+.btn--green:hover {
+  background: #4dae3c
+}
+
+.btn--blue {
+  background: #4272d7
+}
+
+.btn--blue:hover {
+  background: #3868cd
+}
+
+.signup td.active {
+  background-color: #2c6ed5
+}
+
+.signup input[type=datei] {
+  padding: 14px
+}
+
+.signup .table-condensed td, .signup .table-condensed th {
+  font-size: 14px;
+  font-family: roboto,arial,helvetica neue,sans-serif;
+  font-weight: 400
+}
+
+.signup .daterangepicker td {
+  width: 40px;
+  height: 30px
+}
+
+.signup .daterangepicker {
+  border: none;
+  -webkit-box-shadow: 0 8px 20px 0 rgba(0,0,0,.15);
+  -moz-box-shadow: 0 8px 20px 0 rgba(0,0,0,.15);
+  box-shadow: 0 8px 20px 0 rgba(0,0,0,.15);
+  display: none;
+  border: 1px solid #e0e0e0;
+  margin-top: 5px
+}
+
+.signup .daterangepicker::after,.signup .daterangepicker::before {
+  display: none
+}
+
+.signup .daterangepicker thead tr th {
+  padding: 10px 0
+}
+
+.signup .daterangepicker .table-condensed th select {
+  border: 1px solid #ccc;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  font-size: 14px;
+  padding: 5px;
+  outline: none
+}
+
+.signup input {
+  outline: none;
+  margin: 0;
+  border: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  width: 100%;
+  font-size: 14px;
+  font-family: inherit
+}
+
+.signup .input--style-4 {
+  line-height: 50px;
+  background: #fafafa;
+  -webkit-box-shadow: inset 0 1px 3px 0 rgba(0,0,0,.08);
+  -moz-box-shadow: inset 0 1px 3px 0 rgba(0,0,0,.08);
+  box-shadow: inset 0 1px 3px 0 rgba(0,0,0,.08);
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  padding: 0 20px;
+  font-size: 16px;
+  color: #666;
+  -webkit-transition: all .4s ease;
+  -o-transition: all .4s ease;
+  -moz-transition: all .4s ease;
+  transition: all .4s ease
+}
+
+.signup .input--style-4::-webkit-input-placeholder {
+  color: #666
+}
+
+.signup .input--style-4:-moz-placeholder {
+  color: #666;
+  opacity: 1
+}
+
+.signup .input--style-4::-moz-placeholder {
+  color: #666;
+  opacity: 1
+}
+
+.signup .input--style-4:-ms-input-placeholder {
+  color: #666
+}
+
+.signup .input--style-4:-ms-input-placeholder {
+  color: #666
+}
+
+.signup .label {
+  font-size: 16px;
+  color: #555;
+  text-transform: capitalize;
+  display: block;
+  margin-bottom: 5px
+}
+
+.signup .radio-container {
+  display: inline-block;
+  position: relative;
+  padding-left: 30px;
+  cursor: pointer;
+  font-size: 16px;
+  color: #666;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none
+}
+
+.signup .radio-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer
+}
+
+.signup .radio-container input:checked~.checkmark {
+  background-color: #e5e5e5
+}
+
+.signup .radio-container input:checked~.checkmark:after {
+  display: block
+}
+
+.signup .radio-container .checkmark:after {
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -moz-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  -o-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  width: 12px;
+  height: 12px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  background: #57b846
+}
+
+.signup .checkmark {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #e5e5e5;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  -webkit-box-shadow: inset 0 1px 3px 0 rgba(0,0,0,.08);
+  -moz-box-shadow: inset 0 1px 3px 0 rgba(0,0,0,.08);
+  box-shadow: inset 0 1px 3px 0 rgba(0,0,0,.08)
+}
+
+.signup .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none
+}
+
+.signup .input-group {
+  position: relative;
+  margin-bottom: 22px
+}
+
+.signup .input-group-icon {
+  position: relative
+}
+
+.signup .input-icon {
+  position: absolute;
+  font-size: 18px;
+  color: #999;
+  right: 18px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  cursor: pointer
+}
+
+.signup .select--no-search .select2-search {
+  display: none!important
+}
+
+.signup .rs-select2 .select2-container {
+  width: 100%!important;
+  outline: none;
+  background: #fafafa;
+  -webkit-box-shadow: inset 0 1px 3px 0 rgba(0,0,0,.08);
+  -moz-box-shadow: inset 0 1px 3px 0 rgba(0,0,0,.08);
+  box-shadow: inset 0 1px 3px 0 rgba(0,0,0,.08);
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px
+}
+
+.signup .rs-select2 .select2-container .select2-selection--single {
+  outline: none;
+  border: none;
+  height: 50px;
+  background: 0 0
+}
+
+.signup .rs-select2 .select2-container .select2-selection--single .select2-selection__rendered {
+  line-height: 50px;
+  padding-left: 0;
+  color: #555;
+  font-size: 16px;
+  font-family: inherit;
+  padding-left: 22px;
+  padding-right: 50px
+}
+
+.signup .rs-select2 .select2-container .select2-selection--single .select2-selection__arrow {
+  height: 50px;
+  right: 20px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -moz-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  align-items: center
+}
+
+.signup .rs-select2 .select2-container .select2-selection--single .select2-selection__arrow b {
+  display: none
+}
+
+.signup .rs-select2 .select2-container .select2-selection--single .select2-selection__arrow:after {
+  font-family: material-design-iconic-font;
+  content: '\f2f9';
+  font-size: 24px;
+  color: #999;
+  -webkit-transition: all .4s ease;
+  -o-transition: all .4s ease;
+  -moz-transition: all .4s ease;
+  transition: all .4s ease
+}
+
+.signup .rs-select2 .select2-container.select2-container--open .select2-selection--single .select2-selection__arrow::after {
+  -webkit-transform: rotate(-180deg);
+  -moz-transform: rotate(-180deg);
+  -ms-transform: rotate(-180deg);
+  -o-transform: rotate(-180deg);
+  transform: rotate(-180deg)
+}
+
+.signup .select2-container--open .select2-dropdown--below {
+  border: none;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-box-shadow: 0 8px 20px 0 rgba(0,0,0,.15);
+  -moz-box-shadow: 0 8px 20px 0 rgba(0,0,0,.15);
+  box-shadow: 0 8px 20px 0 rgba(0,0,0,.15);
+  border: 1px solid #e0e0e0;
+  margin-top: 5px;
+  overflow: hidden
+}
+
+.signup .select2-container--default .select2-results__option {
+  padding-left: 22px
+}
+
+.signup .title {
+  font-size: 24px;
+  color: #525252;
+  font-weight: 400;
+  margin-bottom: 40px
+}
+
+.signup .card {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  background: #fff
+}
+
+.signup .card-4 {
+  background: #fff;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 8px 20px 0 rgba(0,0,0,.15);
+  -moz-box-shadow: 0 8px 20px 0 rgba(0,0,0,.15);
+  box-shadow: 0 8px 20px 0 rgba(0,0,0,.15)
+}
+
+.signup.card-4 .card-body {
+  padding: 57px 65px;
+  padding-bottom: 65px
+}
+
+@media(max-width: 767px) {
+  .signup .card-4 .card-body {
+      padding:50px 40px
+  }
+}
+
+
+.cursorPointer{
+  cursor: pointer;
+}
+
+.main_content.main_content_iner{
+  min-height: 68vh;
+  transition: .5s;
+  position: relative;
+  background: #f3f4f3;
+  margin: 0;
+  z-index: 22;
+  border-radius: 0;
+  padding: 30px;
+}
